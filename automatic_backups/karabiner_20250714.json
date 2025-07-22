@@ -35,7 +35,7 @@
                         ]
                     },
                     {
-                        "description": "; + AppName",
+                        "description": "Semicolon as modifier layer",
                         "manipulators": [
                             {
                                 "from": { "key_code": "semicolon" },
@@ -66,8 +66,8 @@
                                         "value": 1
                                     }
                                 ],
-                                "from": { "key_code": "k" },
-                                "to": [{ "shell_command": "open -a docker" }],
+                                "from": { "key_code": "h" },
+                                "to": [{ "shell_command": "open -a Home" }],
                                 "type": "basic"
                             },
                             {
@@ -151,7 +151,7 @@
                                     }
                                 ],
                                 "from": { "key_code": "c" },
-                                "to": [{ "shell_command": "open -a Visual\\ Studio\\ Code" }],
+                                "to": [{ "shell_command": "open -a Visual\\ Studio\\ Code\\ -\\ Insiders" }],
                                 "type": "basic"
                             },
                             {
@@ -201,47 +201,11 @@
                                 "from": { "key_code": "s" },
                                 "to": [{ "shell_command": "open -a slack" }],
                                 "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "semicolon_modifier",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": { "key_code": "n" },
-                                "to": [{ "shell_command": "open -a netbird UI.app" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "semicolon_modifier",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": { "key_code": "k" },
-                                "to": [{ "shell_command": "open -a Karabiner-Elements" }],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "semicolon_modifier",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": { "key_code": "x" },
-                                "to": [{ "shell_command": "open -a activityWatch.app" }],
-                                "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Right_Control + h/j/k/l to Arrows",
+                        "description": "Control` `h/j/k/l to Arrows",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -256,7 +220,7 @@
                                 "from": {
                                     "key_code": "h",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -276,7 +240,7 @@
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -296,7 +260,7 @@
                                 "from": {
                                     "key_code": "k",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -316,7 +280,7 @@
                                 "from": {
                                     "key_code": "l",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -327,7 +291,7 @@
                                 "from": {
                                     "key_code": "d",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -338,7 +302,7 @@
                                 "from": {
                                     "key_code": "u",
                                     "modifiers": {
-                                        "mandatory": ["right_control"],
+                                        "mandatory": ["control"],
                                         "optional": ["caps_lock"]
                                     }
                                 },
@@ -355,7 +319,7 @@
                                     "key_code": "caps_lock",
                                     "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "right_control" }],
+                                "to": [{ "key_code": "left_control" }],
                                 "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
